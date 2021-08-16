@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>Amr Bank</title>
+</head>
+
+<body>
+
+
+    <div class="jumbotron">
+        <h1 class="display-4">AMR Bank</h1>
+        <hr class="my-4">
+        <p style="font-size: large;">Your security is our concern. Enjoy your freedom. </p>
+    </div>
+    <div class="container">
+        <h1>Welcome User</h1>
+        <br />
+
+            <form action="BankService" method="GET">
+                <div class="dropdown open">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false" style="width: 230px; height: 50px;">
+                                Select Options
+                            </button>
+                    <div class="dropdown-menu" aria-labelledby="triggerId" >
+                        <button type="button" class="dropdown-item" id="um05" name="btn" value="open">View Account</button>
+                        <button type="button" class="dropdown-item" id="um01" name="btn" value="open">Open account</button>
+                        <button type="button" class="dropdown-item" id="um02" name="btn" value="open">Withdraw</button>
+                        <button type="button" class="dropdown-item" id="um03" name="btn" value="open">Deposit</button>
+                        <button type="button" class="dropdown-item" id="um04" name="btn" value="open">Transfer</button>
+                        
+                        <button type="button" class="dropdown-item" id="um06" name="btn" value="open">Transactions</button>
+                        <button type="button" class="dropdown-item" id="um07" name="btn" value="open">Log Out</button>
+                    </div>
+                </div><br>
+            </form>
+            
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script>
+        um01.onclick=()=>{
+            location.href="openaccount.html"
+        }
+        um02.onclick=()=>{
+            location.href="http://localhost:8080/online_bank/withdraw.html"
+            
+        }
+        um03.onclick=()=>{
+            location.href="http://localhost:8080/online_bank/deposit.html"
+            
+        }
+        um04.onclick=()=>{
+            location.href="http://localhost:8080/online_bank/transfer.html"  
+        }
+
+        um05.onclick=()=>{
+            location.href="http://localhost:8080/online_bank/account"
+            
+        }
+        um06.onclick=()=>{
+            location.href="http://localhost:8080/online_bank/transaction.html"
+            
+        }
+        um07.onclick=()=>{
+            location.href="logout"
+        }
+
+
+
+    </script>
+</body>
+
+</html>
